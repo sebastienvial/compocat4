@@ -1,0 +1,78 @@
+19:16:24.767 [main] INFO  o.s.i.v.b.a.BootLanguageServerBootApp - Starting BootLanguageServerBootApp on LAPTOP-1CHBD4FT with PID 18324 (C:\Users\Sebastien\.vscode\extensions\pivotal.vscode-spring-boot-1.32.0\language-server\BOOT-INF\classes started by Sebastien in d:\Projet_CAT\Catalogue-Interactif\Compocat4)
+19:16:24.776 [main] INFO  o.s.i.v.b.a.BootLanguageServerBootApp - No active profile set, falling back to default profiles: default
+19:16:26.936 [main] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - added listener - now listeners registered: 1
+19:16:27.037 [main] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - added listener - now listeners registered: 2
+19:16:27.138 [main] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - added listener - now listeners registered: 3
+19:16:27.216 [main] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - added listener - now listeners registered: 4
+19:16:27.216 [main] INFO  o.s.i.v.boot.app.SpringSymbolIndex - project listener registered
+19:16:27.289 [main] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - added listener - now listeners registered: 5
+19:16:27.420 [main] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - added listener - now listeners registered: 6
+19:16:27.428 [main] INFO  o.s.i.v.b.j.l.v.SpringProcessCommandHandler - Registered command handler: sts/livedata/listProcesses
+19:16:27.430 [main] INFO  o.s.i.v.b.j.l.v.SpringProcessCommandHandler - Registered command handler: sts/livedata/connect
+19:16:27.430 [main] INFO  o.s.i.v.b.j.l.v.SpringProcessCommandHandler - Registered command handler: sts/livedata/refresh
+19:16:27.430 [main] INFO  o.s.i.v.b.j.l.v.SpringProcessCommandHandler - Registered command handler: sts/livedata/disconnect
+19:16:27.440 [main] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - added listener - now listeners registered: 7
+19:16:27.470 [main] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - added listener - now listeners registered: 8
+19:16:27.478 [main] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - added listener - now listeners registered: 9
+19:16:27.591 [main] INFO  o.s.i.v.b.a.BootLanguageServerBootApp - Started BootLanguageServerBootApp in 3.838 seconds (JVM running for 8.679)
+19:16:27.601 [main] INFO  o.s.i.v.c.l.LanguageServerRunner - java.home = C:\Program Files\Java\jdk-11.0.11
+19:16:27.601 [LanguageServerApp-lifecycle] INFO  o.s.i.v.c.l.LanguageServerRunner - Server ready to start after 8685 ms
+19:16:27.601 [LanguageServerApp-lifecycle] INFO  o.s.i.v.c.l.LanguageServerRunner - Starting LS as client
+19:16:27.601 [LanguageServerApp-lifecycle] INFO  o.s.i.v.c.l.LanguageServerRunner - Connected to parent using stdio
+19:16:27.836 [pool-6-thread-1] INFO  o.s.i.v.c.l.u.SimpleLanguageServer - Initializing
+19:16:27.883 [pool-6-thread-1] INFO  o.s.i.v.c.l.u.CompletionServerCapabilityRegistration - hasDynamicCompletionRegistration = true
+19:16:27.892 [pool-6-thread-1] INFO  o.s.i.v.c.l.u.SimpleLanguageServer - Returning server capabilities to client
+19:16:27.984 [pool-6-thread-1] INFO  o.s.i.v.boot.app.SpringSymbolIndex - update settings of spring indexer - start
+19:16:27.985 [pool-6-thread-1] INFO  o.s.i.v.boot.app.SpringSymbolIndex - update settings of spring indexer - done
+19:16:27.985 [pool-6-thread-1] INFO  o.s.i.v.b.j.BootJavaLanguageServerComponents - update live process tracker settings - start
+19:16:27.986 [pool-6-thread-1] INFO  o.s.i.v.b.j.l.v.SpringProcessTracker - Starting SpringProcessTracker
+19:16:27.987 [pool-6-thread-1] INFO  o.s.i.v.b.j.BootJavaLanguageServerComponents - update live process tracker settings - done
+19:16:27.987 [pool-6-thread-1] INFO  o.s.i.v.b.a.BootLanguageServerInitializer - A configuration changed, triggering reconcile on all open documents
+19:16:27.988 [pool-6-thread-1] INFO  o.s.i.v.b.j.l.v.SpringProcessConnectorRemote - updating settings for remote processses to track - start
+19:16:27.991 [pool-6-thread-1] INFO  o.s.i.v.b.j.l.v.SpringProcessConnectorRemote - updating settings for remote processses to track - done
+19:16:27.994 [pool-6-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change arrived: 1
+19:16:28.015 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.CompletionServerCapabilityRegistration - Registering Dynamic Completion Capabality
+19:16:28.033 [Simple-Language-Server main thread] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - Project Observer is supported
+19:16:28.046 [pool-6-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: invalidate AST for file:///D:/Projet_CAT/Catalogue-Interactif/Compocat4/pom.xml
+19:16:28.058 [pool-6-thread-1] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - change arrived: 1
+19:16:28.058 [pool-6-thread-1] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: invalidate AST for file:///D:/Projet_CAT/Catalogue-Interactif/Compocat4/src/main/java/bobst/catalog/compoCat4/CompoCat4Application.java
+19:16:28.264 [Simple-Language-Server main thread] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - addClasspathListener ...
+19:16:28.310 [ForkJoinPool.commonPool-worker-7] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///D:/Projet_CAT/Catalogue-Interactif/Compocat4/src/main/java/bobst/catalog/compoCat4/CompoCat4Application.java
+19:16:28.312 [Simple-Language-Server main thread] INFO  o.s.i.v.c.l.u.SimpleLanguageServer - Initialization completed after 9393 ms
+19:16:28.313 [pool-6-thread-1] ERROR o.s.i.v.b.jdt.ls.JdtLsProjectCache - Unexpected error registering classpath listener with JDT.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Unhandled method sts/addClasspathListener
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoCompletionStage] :
+	reactor.core.publisher.Mono.fromFuture(Mono.java:488)
+	org.springframework.ide.vscode.commons.languageserver.java.ls.ClasspathListenerManager.lambda$addClasspathListener$3(ClasspathListenerManager.java:109)
+Error has been observed at the following site(s):
+	|_    Mono.fromFuture ? at org.springframework.ide.vscode.commons.languageserver.java.ls.ClasspathListenerManager.lambda$addClasspathListener$3(ClasspathListenerManager.java:109)
+	|_         Mono.defer ? at org.springframework.ide.vscode.commons.languageserver.java.ls.ClasspathListenerManager.addClasspathListener(ClasspathListenerManager.java:109)
+	|_          Mono.then ? at org.springframework.ide.vscode.commons.languageserver.java.ls.ClasspathListenerManager.addClasspathListener(ClasspathListenerManager.java:128)
+	|_    Mono.thenReturn ? at org.springframework.ide.vscode.commons.languageserver.java.ls.ClasspathListenerManager.addClasspathListener(ClasspathListenerManager.java:129)
+	|_       Mono.timeout ? at org.springframework.ide.vscode.boot.jdt.ls.JdtLsProjectCache.enableClasspathListener(JdtLsProjectCache.java:265)
+	|_ Mono.doOnSubscribe ? at org.springframework.ide.vscode.boot.jdt.ls.JdtLsProjectCache.enableClasspathListener(JdtLsProjectCache.java:266)
+	|_   Mono.doOnSuccess ? at org.springframework.ide.vscode.boot.jdt.ls.JdtLsProjectCache.enableClasspathListener(JdtLsProjectCache.java:267)
+Stack trace:
+		at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+		at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+		at org.springframework.ide.vscode.commons.languageserver.util.ParentProcessWatcher.lambda$apply$0(ParentProcessWatcher.java:126)
+		at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+		at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+		at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+19:16:28.315 [pool-6-thread-1] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - Project Observer is not supported
+19:16:33.600 [ForkJoinPool.commonPool-worker-5] INFO  o.s.i.v.c.l.u.SimpleTextDocumentService - hover computation done in 0ms
+19:16:42.188 [ForkJoinPool.commonPool-worker-5] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///D:/Projet_CAT/Catalogue-Interactif/Compocat4/src/main/java/bobst/catalog/compoCat4/CompoCat4Application.java
+19:16:48.347 [ForkJoinPool.commonPool-worker-5] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///D:/Projet_CAT/Catalogue-Interactif/Compocat4/src/main/java/bobst/catalog/compoCat4/CompoCat4Application.java
+19:16:48.426 [pool-6-thread-1] INFO  o.s.i.v.c.l.u.SimpleLanguageServer - shutdown: request arrived
+19:16:48.427 [pool-6-thread-1] INFO  o.s.i.v.c.l.u.SimpleLanguageServer - shutdown: call shutdown handler
+19:16:48.428 [pool-6-thread-1] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - removed listener - now listeners registered: 8
+19:16:48.429 [pool-6-thread-1] INFO  o.s.i.v.b.j.l.v.SpringProcessTracker - Shutting down SpringProcessTracker
+19:16:48.429 [pool-6-thread-1] INFO  o.s.i.v.b.jdt.ls.JdtLsProjectCache - removed listener - now listeners registered: 7
+19:16:48.431 [pool-6-thread-1] INFO  o.s.i.v.c.l.u.SimpleLanguageServer - shutdown: complete
