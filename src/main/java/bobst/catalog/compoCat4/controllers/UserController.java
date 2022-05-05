@@ -36,7 +36,7 @@ public class UserController {
         CatUser user = catUserRepository.getCatUser(authrequest.getName(), authrequest.getPassword()); 
         if ( user != null)  {
             //user authenticated
-            res = new AuthResponse("1234", new CatUser("", "", user.getFirstname(), user.getLastname(), user.getRole()));                
+            res = new AuthResponse("1234", new CatUser(user.getIduser(), "", user.getFirstname(), user.getLastname(), user.getRole()));                
         }
 
         return res;
