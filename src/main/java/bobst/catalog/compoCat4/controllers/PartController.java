@@ -24,7 +24,6 @@ import bobst.catalog.compoCat4.repositories.CatDocRepository;
 import bobst.catalog.compoCat4.repositories.CatPageContentRepository;
 import bobst.catalog.compoCat4.repositories.CatPageRepository;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.http.HttpStatus;
@@ -33,9 +32,9 @@ import org.springframework.http.ResponseEntity;
 
 @RestController
 public class PartController {
-	
-	@Value ("${origins.path}")  //origins.path=http://localhost:4200
-    private static final String ORIGINS = "http://localhost:4200" ;
+  
+	private static final String ORIGINS = "http://localhost:4200" ;
+    //private static final String ORIGINS = "http://192.168.99.100:4200/";  //container
 
 	private final CatPageContentRepository catPageContentRepository;
 	private final CatBomRepository catBomRepository;
@@ -124,8 +123,10 @@ public class PartController {
 		//search date eclatement of document
 		java.sql.Timestamp ts = catDocRepository.findDateByIdoc(idDoc);
         Date dateEclatement = Date.valueOf(ts.toLocalDateTime().toLocalDate());
-		
+		System.out.println(dateEclatement);
 		ArrayList<NodeBomDynamic> bom = catBomRepository.findBomChildDynamic(idDoc, idParent);
+System.out.println(bom.toString());
+		
 		ArrayList<NodeBomDynamic> bomNew = new ArrayList<NodeBomDynamic>();
 
 		for (NodeBomDynamic nodeBom : bom) {
@@ -172,13 +173,6 @@ public class PartController {
         return catPageContentRepository.save(catPageContent);
     }
 	
-	
-	// @GetMapping ("/catPageContent")
-	// public Iterable<CatPageContent> getCatPageContent() {
-	// 	final String idPage="ZSP_BSA03500000AK_017_-_P01";
-	// 	//catPageContentRepository.findByidPage(idPage);
-	// 	return catPageContentRepository.findAll();
-	// }
 	
 	@GetMapping ("/catPageContent/{idPage}")
 	public ArrayList<CatPageContent> getContentByIdPage(@PathVariable String idPage){

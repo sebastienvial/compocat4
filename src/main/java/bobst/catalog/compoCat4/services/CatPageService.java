@@ -27,11 +27,10 @@ import bobst.catalog.compoCat4.models.CatPage;
 import bobst.catalog.compoCat4.repositories.CatBomRepository;
 import bobst.catalog.compoCat4.repositories.CatPageRepository;
 
-import com.azure.storage.blob.BlobClient;
-import com.azure.storage.blob.BlobContainerClient;
-import com.azure.storage.blob.BlobContainerClientBuilder;
-import com.azure.storage.blob.BlobServiceClient;
-import com.azure.storage.blob.BlobServiceClientBuilder;
+// import com.azure.storage.blob.BlobClient;
+// import com.azure.storage.blob.BlobContainerClient;
+// import com.azure.storage.blob.BlobServiceClient;
+// import com.azure.storage.blob.BlobServiceClientBuilder;
 
 @Service
 public class CatPageService {
@@ -77,30 +76,30 @@ public class CatPageService {
     private boolean uploadInStorage(Path source) throws IOException {
 
         boolean res = false;
-        String connectionString = "DefaultEndpointsProtocol=https;AccountName=svgview;AccountKey=I++B93xrQ5mpYyLtTahG08/wM20grjTqRQhFrYDi8w8HvS7mMBt3y09aOLswkmqgS5DNQo8LxXzOAt9MXEvicw==;EndpointSuffix=core.windows.net";
+        //String connectionString = "DefaultEndpointsProtocol=https;AccountName=svgview;AccountKey=I++B93xrQ5mpYyLtTahG08/wM20grjTqRQhFrYDi8w8HvS7mMBt3y09aOLswkmqgS5DNQo8LxXzOAt9MXEvicw==;EndpointSuffix=core.windows.net";
         
         // Create a BlobServiceClient object which will be used to return the container client
-        BlobServiceClient blobServiceClient = new BlobServiceClientBuilder().connectionString(connectionString).buildClient();
+        //BlobServiceClient blobServiceClient = new BlobServiceClientBuilder().connectionString(connectionString).buildClient();
         
         // Return the container client object
-        BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient("svg");
+        //BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient("svg");
 
-        String localPath = source.toAbsolutePath().toString();
-        String fileName = source.toString();
+        // String localPath = source.toAbsolutePath().toString();
+        // String fileName = source.toString();
 
         // Get a reference to a blob
-        BlobClient blobClient = containerClient.getBlobClient(fileName);
+        //BlobClient blobClient = containerClient.getBlobClient(fileName);
 
-        System.out.println("\nUploading to Blob storage as blob:\n\t" + blobClient.getBlobUrl());
+        //System.out.println("\nUploading to Blob storage as blob:\n\t" + blobClient.getBlobUrl());
 
         // Upload or update the blob (overwrite= true)
-        try {
-          blobClient.uploadFromFile(localPath, true);          
-          res = true;
+        // try {
+        //   blobClient.uploadFromFile(localPath, true);          
+        //   res = true;
 
-        } catch (UncheckedIOException ex) {
-          System.err.printf("Failed to upload from file %s%n", ex.getMessage());
-        } 
+        // } catch (UncheckedIOException ex) {
+        //   System.err.printf("Failed to upload from file %s%n", ex.getMessage());
+        // } 
         
         return res;
     }
