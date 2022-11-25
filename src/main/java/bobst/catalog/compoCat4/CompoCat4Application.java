@@ -9,6 +9,13 @@ import org.xml.sax.SAXException;
 import bobst.catalog.compoCat4.services.WatchCaptureService;
 
 @SpringBootApplication
+
+/* Branch Master4 
+ * New Branch for BOBST developpement regarding PartsView 4.0 
+ * Date  : 25.11.2022
+ * Autor : Vial Sébastien
+ */
+
 public class CompoCat4Application {
 
 	public static void main(String[] args) throws InterruptedException, IllegalStateException, ParserConfigurationException, SAXException {
